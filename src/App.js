@@ -2,43 +2,15 @@ import { useState, useEffect, useRef } from "react";
 
 const NAV_LINKS = ["About", "Portfolio", "Services", "Contact"];
 
-// ╔══════════════════════════════════════════════════════════╗
-// ║         🖼️  HOW TO ADD YOUR IMAGES — READ THIS          ║
-// ╠══════════════════════════════════════════════════════════╣
-// ║                                                          ║
-// ║  STEP 1: Create a folder called "images" inside /src     ║
-// ║          src/images/                                     ║
-// ║                                                          ║
-// ║  STEP 2: Copy your image files into that folder          ║
-// ║          e.g. george-photo.jpg, trident.jpg, etc.        ║
-// ║                                                          ║
-// ║  STEP 3: Import them just below this comment block:      ║
-// ║          import profileImg from "./images/george.jpg";   ║
-// ║          import p1 from "./images/trident.jpg";          ║
-// ║          import p2 from "./images/escapade.jpg";         ║
-// ║          ... and so on for each project                  ║
-// ║                                                          ║
-// ║  STEP 4: Replace null values below with your imports     ║
-// ║          PROFILE_IMAGE = profileImg                      ║
-// ║          image: p1   (in PROJECTS array)                 ║
-// ║                                                          ║
-// ║  Supported formats: .jpg .jpeg .png .webp .gif           ║
-// ╚══════════════════════════════════════════════════════════╝
 
-// ── PASTE YOUR IMPORTS BELOW THIS LINE ──
+
  import profileImg from "./images/george.png";
-// import p1 from "./images/trident.jpg";
-// import p2 from "./images/escapade.jpg";
-// import p3 from "./images/jetlyfe.jpg";
-// import p4 from "./images/charm.jpg";
-// import p5 from "./images/winit.jpg";
-// import p6 from "./images/forex.jpg";
-// ── END OF IMPORTS ──
+
 
 
 // ── SET YOUR PROFILE PHOTO HERE ──
 const PROFILE_IMAGE = profileImg;
-// Change null to your import variable, e.g:  profileImg
+
 
 
 // ── SET YOUR PROJECT IMAGES HERE ──
@@ -459,9 +431,6 @@ export default function App() {
                 </div>
               </div>
 
-              {!PROFILE_IMAGE && (
-                <ImageTip message="📸 To add your profile photo: create src/images/ folder, drop in your photo, import it at the top of App.js, then set PROFILE_IMAGE = yourImportedVariable" />
-              )}
             </div>
 
             {/* Bio */}
@@ -506,9 +475,7 @@ export default function App() {
             </div>
           </div>
 
-          {/* {noProjectImages && (
-            <ImageTip message="🖼️ To add project images: drop files in src/images/, import them at the top of App.js (e.g. import p1 from './images/trident.jpg'), then set the image: field for each project in the PROJECTS array." />
-          )} */}
+
 
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : isTablet ? "1fr 1fr" : "repeat(3, 1fr)", gap: isMobile ? 16 : 2, marginTop: 24 }}>
             {filtered.map((p) => (

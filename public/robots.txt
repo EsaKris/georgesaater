@@ -1,3 +1,41 @@
-# https://www.robotstxt.org/robotstxt.html
+# George Saater Portfolio — robots.txt
+# Website: https://georgesaater.com
+# Portfolio Owner: George Saater (Creative Director, Graphic Designer, Video Editor)
+# Website Developer: Esa Kris (Web Developer & UI/UX Designer)
+
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemaps
+Sitemap: https://georgesaater.com/sitemap.xml
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
