@@ -1,11 +1,7 @@
 import { useState, useEffect, useRef } from "react";
+import profileImg from "./images/george.png";
 
 const NAV_LINKS = ["About", "Portfolio", "Services", "Contact"];
-
-
-
- import profileImg from "./images/george.png";
-
 
 
 // ── SET YOUR PROFILE PHOTO HERE ──
