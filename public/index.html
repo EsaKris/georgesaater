@@ -2,42 +2,459 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--         FAVICON — uses George's photo           -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png" />
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--            VIEWPORT & THEME                     -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ff4400" />
+    <meta name="msapplication-TileColor" content="#080808" />
+    <meta name="msapplication-navbutton-color" content="#ff4400" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--         PRIMARY SEO META TAGS                   -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <title>George Saater | Graphic Designer & Video Editor | Creative Director Nigeria</title>
+
+    <meta name="description" content="George Saater is a world-class Creative Director, Graphic Designer, and Video Editor based in Nigeria. Specializing in brand identity, poster design, motion graphics, visual storytelling, and cinematic video production. Available for freelance projects globally." />
+
+    <meta name="keywords" content="
+      George Saater, graphic designer Nigeria, freelance graphic designer, video editor Nigeria,
+      creative director Africa, brand identity designer, poster designer, motion graphics artist,
+      visual storyteller, brand photographer, logo designer Nigeria, freelance video editor,
+      graphic design portfolio, video editing portfolio, brand design Nigeria, creative agency Nigeria,
+      freelance designer for hire, hire graphic designer, hire video editor, cinematic video editor,
+      art director Nigeria, media consultant, brand consultant Nigeria, design portfolio 2025 2026,
+      Junemontage, george saater design, george saater portfolio, georgesaater.com,
+      best graphic designer Nigeria, top video editor Nigeria, professional branding Nigeria,
+      Nigerian creative director, African graphic designer, Lagos designer, Abuja designer,
+      professional logo designer, brand strategy designer, creative design services,
+      social media graphic designer, flyer designer Nigeria, professional poster design,
+      corporate branding Nigeria, startup branding, small business branding,
+      freelance creative director, motion designer, animated brand videos,
+      photography branding, brand photography Nigeria, content creator designer,
+      visual identity system, rebranding expert Nigeria
+    " />
+
+    <meta name="author" content="George Saater" />
+    <meta name="designer" content="Esa Kris" />
+    <meta name="developer" content="Esa Kris — Web Developer &amp; UI/UX Designer" />
+    <meta name="creator" content="George Saater — Creative Director | Esa Kris — Web Developer" />
+    <meta name="publisher" content="George Saater Creative Studio" />
+    <meta name="copyright" content="© 2026 George Saater. All Rights Reserved." />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    <meta name="rating" content="general" />
+    <meta name="category" content="Portfolio, Graphic Design, Video Editing, Creative Direction, Freelance Design" />
+    <meta name="classification" content="Business, Creative Services, Portfolio" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+    <meta name="target" content="all" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+
+    <!-- Canonical URL — update with your actual domain -->
+    <link rel="canonical" href="https://georgesaater.com/" />
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--        OPEN GRAPH (Facebook, LinkedIn, WhatsApp) -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="George Saater | Creative Director & Graphic Designer" />
+    <meta property="og:title" content="George Saater | Graphic Designer, Video Editor & Creative Director" />
+    <meta property="og:description" content="Strategy-driven Creative Director translating brand intent into impactful visual solutions. Specializing in graphic design, brand identity, motion graphics, and cinematic video editing. Available worldwide for freelance projects." />
+    <meta property="og:url" content="https://georgesaater.com/" />
+    <meta property="og:image" content="https://georgesaater.com/images/george.png" />
+    <meta property="og:image:secure_url" content="https://georgesaater.com/images/george.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="George Saater — Creative Director, Graphic Designer and Video Editor" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="en_NG" />
+    <meta property="og:email" content="georgesaater@gmail.com" />
+    <meta property="og:phone_number" content="+2348137620998" />
+
+    <!-- Article author for blog-style sharing -->
+    <meta property="article:author" content="George Saater" />
+    <meta property="article:publisher" content="https://georgesaater.com/" />
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--              TWITTER / X CARD                   -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@georgesaater" />
+    <meta name="twitter:creator" content="@georgesaater" />
+    <meta name="twitter:title" content="George Saater | Graphic Designer, Video Editor & Creative Director" />
+    <meta name="twitter:description" content="Strategy-driven Creative Director translating brand intent into impactful visual solutions — graphic design, brand identity, motion graphics & video editing. Hire me for your next project." />
+    <meta name="twitter:image" content="https://georgesaater.com/images/george.png" />
+    <meta name="twitter:image:alt" content="George Saater — Creative Director and Visual Storyteller" />
+    <meta name="twitter:domain" content="georgesaater.com" />
+    <meta name="twitter:url" content="https://georgesaater.com/" />
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--         GEO & LOCAL SEO TAGS                    -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <meta name="geo.region" content="NG" />
+    <meta name="geo.country" content="Nigeria" />
+    <meta name="geo.placename" content="Nigeria, Africa" />
+    <meta name="ICBM" content="9.0820, 8.6753" />
+    <meta name="DC.title" content="George Saater — Creative Director Portfolio" />
+    <meta name="DC.creator" content="George Saater" />
+    <meta name="DC.subject" content="Graphic Design, Video Editing, Brand Identity, Creative Direction" />
+    <meta name="DC.description" content="Professional portfolio of George Saater — graphic designer, video editor, and creative director based in Nigeria." />
+    <meta name="DC.publisher" content="George Saater Creative Studio" />
+    <meta name="DC.contributor" content="Esa Kris" />
+    <meta name="DC.language" content="en" />
+    <meta name="DC.coverage" content="Worldwide" />
+    <meta name="DC.rights" content="© 2026 George Saater. All Rights Reserved." />
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--       STRUCTURED DATA — JSON-LD SCHEMA          -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+
+        {
+          "@type": "Person",
+          "@id": "https://georgesaater.com/#person",
+          "name": "George Saater",
+          "alternateName": ["Junemontage", "George Jack"],
+          "description": "George Saater is a strategy-driven Creative Director, Graphic Designer, and Video Editor based in Nigeria. He specializes in brand identity, poster design, motion graphics, visual storytelling, and cinematic video production for clients worldwide.",
+          "url": "https://georgesaater.com",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://georgesaater.com/images/george.png",
+            "width": 800,
+            "height": 800
+          },
+          "email": "georgesaater@gmail.com",
+          "telephone": "+2348137620998",
+          "jobTitle": "Creative Director & Graphic Designer",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "George Saater Creative Studio"
+          },
+          "nationality": {
+            "@type": "Country",
+            "name": "Nigeria"
+          },
+          "knowsAbout": [
+            "Graphic Design",
+            "Brand Identity",
+            "Video Editing",
+            "Motion Graphics",
+            "Creative Direction",
+            "Brand Photography",
+            "Poster Design",
+            "Visual Storytelling",
+            "Adobe Photoshop",
+            "Adobe Illustrator",
+            "Adobe Premiere Pro",
+            "Adobe After Effects",
+            "Figma"
+          ],
+          "sameAs": [
+            "https://www.behance.net/Junemontage",
+            "https://www.linkedin.com/in/june-montage",
+            "https://www.instagram.com/Junemontage1.0",
+            "https://wa.me/2348137620998"
+          ]
+        },
+
+        {
+          "@type": "WebSite",
+          "@id": "https://georgesaater.com/#website",
+          "url": "https://georgesaater.com",
+          "name": "George Saater | Creative Director & Graphic Designer",
+          "description": "Official portfolio website of George Saater — Graphic Designer, Video Editor, and Creative Director based in Nigeria. Available for freelance projects globally.",
+          "publisher": {
+            "@id": "https://georgesaater.com/#person"
+          },
+          "author": {
+            "@id": "https://georgesaater.com/#person"
+          },
+          "creator": {
+            "@type": "Person",
+            "name": "Esa Kris",
+            "jobTitle": "Web Developer & UI/UX Designer",
+            "description": "Esa Kris is a professional web developer and UI/UX designer who built and designed the George Saater portfolio website. Specializing in React.js, modern frontend design, and high-performance portfolio websites for creative professionals.",
+            "url": "https://georgesaater.com"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://georgesaater.com/?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+
+        {
+          "@type": "WebPage",
+          "@id": "https://georgesaater.com/#webpage",
+          "url": "https://georgesaater.com",
+          "name": "George Saater | Graphic Designer, Video Editor & Creative Director",
+          "description": "Strategy-driven Creative Director translating brand intent into impactful visual solutions — graphic design, brand identity, motion graphics & video editing.",
+          "isPartOf": { "@id": "https://georgesaater.com/#website" },
+          "about": { "@id": "https://georgesaater.com/#person" },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://georgesaater.com/images/george.png"
+          },
+          "datePublished": "2026-01-01",
+          "dateModified": "2026-03-18",
+          "author": { "@id": "https://georgesaater.com/#person" },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://georgesaater.com"
+              }
+            ]
+          }
+        },
+
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://georgesaater.com/#service",
+          "name": "George Saater Creative Studio",
+          "description": "Professional graphic design, video editing, brand identity, motion graphics, and creative direction services by George Saater. Serving clients in Nigeria and worldwide.",
+          "url": "https://georgesaater.com",
+          "logo": "https://georgesaater.com/images/george.png",
+          "image": "https://georgesaater.com/images/george.png",
+          "email": "georgesaater@gmail.com",
+          "telephone": "+2348137620998",
+          "founder": { "@id": "https://georgesaater.com/#person" },
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "NG",
+            "addressRegion": "Nigeria"
+          },
+          "areaServed": {
+            "@type": "GeoShape",
+            "name": "Worldwide"
+          },
+          "priceRange": "$$",
+          "currenciesAccepted": "NGN, USD, GBP",
+          "paymentAccepted": "Bank Transfer, PayPal, Wise",
+          "openingHours": "Mo-Fr 09:00-18:00",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Creative Design Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Graphic Design",
+                  "description": "Professional poster design, editorial layouts, flyers, and visual content crafted with intention and precision."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Brand Identity Design",
+                  "description": "Complete brand identity systems including logos, visual language, brand guidelines, and style guides."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Video Editing",
+                  "description": "Cinematic video editing from raw footage to polished brand films, reels, and promotional content."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Motion Graphics",
+                  "description": "Dynamic animated content and motion graphics that bridge the gap between design and moving image."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Brand Photography Direction",
+                  "description": "Art-directed brand photography that reflects your brand's true value and shapes audience perception."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Creative Direction",
+                  "description": "Strategic creative oversight translating brand vision and intent into cohesive, impactful visual solutions."
+                }
+              }
+            ]
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "TRIDENT Media"
+              },
+              "reviewBody": "George delivered an exceptional brand identity that completely transformed how we present ourselves. His strategic approach to design is unmatched."
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "10",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "sameAs": [
+            "https://www.behance.net/Junemontage",
+            "https://www.linkedin.com/in/june-montage",
+            "https://www.instagram.com/Junemontage1.0"
+          ]
+        },
+
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Who is George Saater?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "George Saater is a strategy-driven Creative Director, Graphic Designer, and Video Editor based in Nigeria. With over 6 years of experience, he has worked with brands including TRIDENT, JETLYFE, ESCAPADE, FOREX PORTAL, WINIT, and CHARM, delivering bold visual solutions across brand identity, poster design, motion graphics, and cinematic video production."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What services does George Saater offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "George Saater offers professional graphic design, brand identity and logo design, video editing, motion graphics, brand photography direction, and full creative direction services. He works with startups, SMEs, and established brands both in Nigeria and internationally."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I hire George Saater for a project?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can hire George Saater by reaching out via email at georgesaater@gmail.com or via WhatsApp at +234 813 762 0998. He is currently accepting new freelance clients for brand design, video editing, and creative direction projects."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who built the George Saater portfolio website?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The George Saater portfolio website was designed and developed by Esa Kris, a professional web developer and UI/UX designer specializing in modern React.js portfolio websites for creative professionals, graphic designers, video editors, and freelancers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is George Saater available for international projects?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, George Saater is available for freelance graphic design, video editing, and creative direction projects worldwide. He accepts clients globally and works remotely with businesses across Africa, Europe, the United States, and beyond."
+              }
+            }
+          ]
+        }
+
+      ]
+    }
+    </script>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--          PRECONNECT & PERFORMANCE               -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--        VERIFICATION TAGS (fill in when ready)   -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_CODE" /> -->
+    <!-- <meta name="msvalidate.01" content="YOUR_BING_WEBMASTER_CODE" /> -->
+    <!-- <meta name="yandex-verification" content="YOUR_YANDEX_CODE" /> -->
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--     DEVELOPER / CREDIT COMMENT (in source)      -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--
+    ┌─────────────────────────────────────────────────┐
+    │                                                 │
+    │   Portfolio Owner:  George Saater               │
+    │   Role:             Creative Director           │
+    │                     Graphic Designer            │
+    │                     Video Editor                │
+    │   Email:            georgesaater@gmail.com      │
+    │   WhatsApp:         +234 813 762 0998           │
+    │   Behance:          Junemontage                 │
+    │   Instagram:        @Junemontage1.0             │
+    │                                                 │
+    │   Website Developer: Esa Kris                   │
+    │   Role:              Web Developer              │
+    │                      UI/UX Designer             │
+    │                      React.js Specialist        │
+    │   Specialty:         Portfolio websites for     │
+    │                      creative professionals,    │
+    │                      graphic designers &        │
+    │                      video editors              │
+    │                                                 │
+    │   Built with:  React.js                         │
+    │   Year:        2026                             │
+    │                                                 │
+    └─────────────────────────────────────────────────┘
     -->
-    <title>React App</title>
+
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <div style="background:#080808;color:#f0f0f0;padding:40px;text-align:center;font-family:Arial,sans-serif;">
+        <h1 style="color:#ff4400;font-size:32px;margin-bottom:16px;">George Saater</h1>
+        <h2 style="font-size:18px;font-weight:300;margin-bottom:12px;">Creative Director · Graphic Designer · Video Editor</h2>
+        <p style="color:rgba(255,255,255,0.6);margin-bottom:20px;">You need to enable JavaScript to view this portfolio.</p>
+        <p style="color:rgba(255,255,255,0.5);font-size:14px;">
+          Contact George directly:<br/>
+          📧 georgesaater@gmail.com<br/>
+          📱 +234 813 762 0998
+        </p>
+      </div>
+    </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
