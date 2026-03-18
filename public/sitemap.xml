@@ -7,12 +7,12 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://georgesaater.com/</loc>
+    <loc>https://georgesaater.vercel.app/</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://georgesaater.com/images/george.png</image:loc>
+      <image:loc>https://georgesaater.vercel.app/images/george.png</image:loc>
       <image:title>George Saater — Creative Director, Graphic Designer and Video Editor</image:title>
       <image:caption>George Saater is a strategy-driven Creative Director and Graphic Designer based in Nigeria, specializing in brand identity, poster design, video editing, and motion graphics.</image:caption>
     </image:image>
@@ -20,7 +20,7 @@
 
   <!-- About Section -->
   <url>
-    <loc>https://georgesaater.com/#about</loc>
+    <loc>https://georgesaater.vercel.app/#about</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -28,7 +28,7 @@
 
   <!-- Portfolio Section -->
   <url>
-    <loc>https://georgesaater.com/#portfolio</loc>
+    <loc>https://georgesaater.vercel.app/#portfolio</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
@@ -36,7 +36,7 @@
 
   <!-- Services Section -->
   <url>
-    <loc>https://georgesaater.com/#services</loc>
+    <loc>https://georgesaater.vercel.app/#services</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -44,7 +44,7 @@
 
   <!-- Contact Section -->
   <url>
-    <loc>https://georgesaater.com/#contact</loc>
+    <loc>https://georgesaater.vercel.app/#contact</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

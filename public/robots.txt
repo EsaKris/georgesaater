@@ -1,5 +1,5 @@
 # George Saater Portfolio — robots.txt
-# Website: https://georgesaater.com
+# Website: https://georgesaater.vercel.app
 # Portfolio Owner: George Saater (Creative Director, Graphic Designer, Video Editor)
 # Website Developer: Esa Kris (Web Developer & UI/UX Designer)
 
@@ -7,7 +7,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://georgesaater.com/sitemap.xml
+Sitemap: https://georgesaater.vercel.app/sitemap.xml
 
 # Allow all major search engines
 User-agent: Googlebot
